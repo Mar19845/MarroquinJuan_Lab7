@@ -1215,6 +1215,7 @@ GameObject:
   - component: {fileID: 1438861669}
   - component: {fileID: 1438861674}
   - component: {fileID: 1438861673}
+  - component: {fileID: 1438861675}
   m_Layer: 0
   m_Name: Malo
   m_TagString: Malo
@@ -1230,7 +1231,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438861668}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -1333,6 +1334,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1438861673}
   waypoints: {fileID: 1659809371}
+--- !u!54 &1438861675
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438861668}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1484918272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,7 +1365,7 @@ GameObject:
   - component: {fileID: 1484918277}
   m_Layer: 0
   m_Name: Jardin del Eden
-  m_TagString: Save
+  m_TagString: Sano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1361,7 +1378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484918272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.47, y: 0.01, z: -6.99}
+  m_LocalPosition: {x: 7.47, y: 0.21, z: -6.99}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 442662665}
@@ -1584,6 +1601,7 @@ GameObject:
   - component: {fileID: 1769860578}
   - component: {fileID: 1769860577}
   - component: {fileID: 1769860579}
+  - component: {fileID: 1769860580}
   m_Layer: 0
   m_Name: Bueno
   m_TagString: Untagged
@@ -1716,6 +1734,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1769860580
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769860572}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1776704528
 GameObject:
   m_ObjectHideFlags: 0

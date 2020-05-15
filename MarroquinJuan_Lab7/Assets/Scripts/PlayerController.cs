@@ -20,13 +20,15 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    private void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Malo"))
         {
             Destroy(gameObject);
         }
-
+        if(other.gameObject.CompareTag("Sano"))
+        {
+            Destroy(gameObject);
+        }
     }
-
 }
