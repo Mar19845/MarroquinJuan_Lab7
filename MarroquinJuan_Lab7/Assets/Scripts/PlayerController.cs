@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public Camera cam;
     public NavMeshAgent agent;
+    public Text scoreText;
     // Update is called once per frame
     void Update()
     {
@@ -24,11 +26,14 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Malo"))
         {
+            scoreText.text = "Perdio";
             Destroy(gameObject);
+            
         }
         if(other.gameObject.CompareTag("Sano"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            scoreText.text = "Gano";
         }
     }
 }
